@@ -1,0 +1,20 @@
+{
+  "key.astravisuals.open_menu": "Open Astra Visuals menu",
+  "screen.astravisuals.title": "Astra Visuals",
+  "screen.astravisuals.subtitle": "Client-side HUD effects without hidden ESP",
+  "screen.astravisuals.on": "ON",
+  "screen.astravisuals.off": "OFF",
+  "screen.astravisuals.enabled": "Master HUD",
+  "screen.astravisuals.watermark": "Watermark",
+  "screen.astravisuals.stats": "Info panel",
+  "screen.astravisuals.keystrokes": "Keystrokes",
+  "screen.astravisuals.armor": "Armor",
+  "screen.astravisuals.effects": "Effects",
+  "screen.astravisuals.compass": "Compass",
+  "screen.astravisuals.target_hud": "Target HUD",
+  "screen.astravisuals.target_indicator": "Crosshair indicator",
+  "screen.astravisuals.low_health": "Low health",
+  "screen.astravisuals.theme": "Theme",
+  "screen.astravisuals.opacity": "Opacity",
+  "screen.astravisuals.done": "Done"
+}

@@ -1,0 +1,20 @@
+{
+  "key.astravisuals.open_menu": "Открыть меню Astra Visuals",
+  "screen.astravisuals.title": "Astra Visuals",
+  "screen.astravisuals.subtitle": "Клиентские HUD-эффекты без скрытого ESP",
+  "screen.astravisuals.on": "ВКЛ",
+  "screen.astravisuals.off": "ВЫКЛ",
+  "screen.astravisuals.enabled": "Весь HUD",
+  "screen.astravisuals.watermark": "Watermark",
+  "screen.astravisuals.stats": "Инфопанель",
+  "screen.astravisuals.keystrokes": "Keystrokes",
+  "screen.astravisuals.armor": "Броня",
+  "screen.astravisuals.effects": "Эффекты",
+  "screen.astravisuals.compass": "Компас",
+  "screen.astravisuals.target_hud": "Target HUD",
+  "screen.astravisuals.target_indicator": "Индикатор прицела",
+  "screen.astravisuals.low_health": "Низкое здоровье",
+  "screen.astravisuals.theme": "Тема",
+  "screen.astravisuals.opacity": "Прозрачность",
+  "screen.astravisuals.done": "Готово"
+}
