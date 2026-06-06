@@ -20,11 +20,11 @@ jobs:
           distribution: temurin
           java-version: 21
 
-      - name: Set executable permission for Gradlew
-        run: chmod +x ./gradlew
+      - name: Install Gradle
+        run: sudo apt-get update && sudo apt-get install -y gradle
 
       - name: Build with Gradle
-        run: ./gradlew build --no-daemon
+        run: gradle build --no-daemon
 
       - name: Upload JAR
         uses: actions/upload-artifact@v4
