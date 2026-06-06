@@ -70,7 +70,7 @@ public final class VisualConfigScreen extends Screen {
         y += 30;
         addDrawableChild(ButtonWidget.builder(
                 Text.translatable("screen.astravisuals.done"),
-                button -> onClose()
+                button -> close()
         ).dimensions(width / 2 - 100, y, 200, BUTTON_HEIGHT).build());
     }
 
@@ -113,7 +113,7 @@ public final class VisualConfigScreen extends Screen {
     }
 
     @Override
-    public void onClose() {
+    public void close() {
         ConfigManager.save(config);
         if (client != null) {
             client.setScreen(parent);
