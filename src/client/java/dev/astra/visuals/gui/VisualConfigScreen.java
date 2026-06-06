@@ -110,8 +110,8 @@ public final class VisualConfigScreen extends Screen {
     }
 
     @Override
-    public void render(DrawContext context, int mouseX, int mouseY, float deltaTicks) {
-        renderBackground(context, mouseX, mouseY, deltaTicks);
+    public void render(DrawContext context, int mouseX, int mouseY, float delta) {
+        renderBackground(context, mouseX, mouseY, delta);
         context.drawCenteredTextWithShadow(textRenderer, title, width / 2, 16, 0xFFFFFFFF);
         context.drawCenteredTextWithShadow(
                 textRenderer,
@@ -120,7 +120,7 @@ public final class VisualConfigScreen extends Screen {
                 30,
                 0xFFB8B8C8
         );
-        super.render(context, mouseX, mouseY, deltaTicks);
+        super.render(context, mouseX, mouseY, delta);
     }
 
     @Override
