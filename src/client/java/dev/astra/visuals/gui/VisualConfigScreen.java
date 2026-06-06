@@ -74,13 +74,7 @@ public final class VisualConfigScreen extends Screen {
         ).dimensions(width / 2 - 100, y, 200, BUTTON_HEIGHT).build());
     }
 
-    private void addToggle(
-            String translationKey,
-            BooleanSupplier getter,
-            Consumer<Boolean> setter,
-            int x,
-            int y
-    ) {
+    private void addToggle(String translationKey, BooleanSupplier getter, Consumer<Boolean> setter, int x, int y) {
         addDrawableChild(ButtonWidget.builder(toggleLabel(translationKey, getter.getAsBoolean()), button -> {
             boolean newValue = !getter.getAsBoolean();
             setter.accept(newValue);
@@ -90,23 +84,18 @@ public final class VisualConfigScreen extends Screen {
     }
 
     private Text toggleLabel(String translationKey, boolean enabled) {
-        String state = Text.translatable(enabled
-                ? "screen.astravisuals.on"
-                : "screen.astravisuals.off").getString();
-
+        String state = Text.translatable(enabled ? "screen.astravisuals.on" : "screen.astravisuals.off").getString();
         return Text.literal(Text.translatable(translationKey).getString() + ": " + state);
     }
 
     private Text themeLabel() {
         Theme theme = Theme.fromName(config.theme);
-        return Text.literal(Text.translatable("screen.astravisuals.theme").getString()
-                + ": " + theme.displayName());
+        return Text.literal(Text.translatable("screen.astravisuals.theme").getString() + ": " + theme.displayName());
     }
 
     private Text opacityLabel() {
         int percent = Math.round(config.panelOpacity / 255.0F * 100.0F);
-        return Text.literal(Text.translatable("screen.astravisuals.opacity").getString()
-                + ": " + percent + "%");
+        return Text.literal(Text.translatable("screen.astravisuals.opacity").getString() + ": " + percent + "%");
     }
 
     @Override
